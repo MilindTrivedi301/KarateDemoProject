@@ -18,9 +18,9 @@ Feature: Articles post request
         
         Given header Authorization = 'Token ' + token
         Given path 'articles'
-        And request {"article": {"title": "test_hello_Karate2223", "description": "test_karate", "body": "test karate post request", "tagList": ["post_karate"]}}
+        And request {"article": {"title": "test_hello_Karate3", "description": "test_karate", "body": "test karate post request", "tagList": ["post_karate"]}}
         When method post
         Then status 201
-        And match response.article.title == 'test_hello_Karate2223'
+        And match response.article.title == 'test_hello_Karate3'
          
 
